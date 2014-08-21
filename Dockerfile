@@ -46,6 +46,7 @@ run     chown -R elasticsearch:elasticsearch /var/lib/elasticsearch
 run     mkdir -p /tmp/elasticsearch && chown elasticsearch:elasticsearch /tmp/elasticsearch
 
 # Confiure StatsD
+add     ./graphite/localtime /etc/localtime
 add     ./statsd/config.js /src/statsd/config.js
 
 # Configure Whisper, Carbon and Graphite-Web
@@ -84,7 +85,7 @@ expose  8125/udp
 # StatsD Management port
 expose  8126
 
-
+expose  2003
 
 # -------- #
 #   Run!   #

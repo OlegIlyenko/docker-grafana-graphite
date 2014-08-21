@@ -39,7 +39,7 @@ function (Settings) {
     // Example:
     //   If TIME_ZONE is set to UTC, set this to "0000"
     //
-    timezoneOffset: 0000,
+    timezoneOffset: "+0100",
 
     // set to false to disable unsaved changes warning
     unsaved_changes_warning: true,
